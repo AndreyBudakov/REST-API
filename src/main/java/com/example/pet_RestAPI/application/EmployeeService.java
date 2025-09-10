@@ -15,9 +15,6 @@ public class EmployeeService {
 
     private final EmployeeRepository repository;
 
-    /**
-     * Создать нового сотрудника
-     */
     public EmployeeDto create(EmployeeDto dto) {
         EmployeeEntity employee = new EmployeeEntity();
         employee.setName(dto.name());
@@ -32,9 +29,6 @@ public class EmployeeService {
         return mapToDto(saved);
     }
 
-    /**
-     * Найти всех сотрудников
-     */
     public List<EmployeeDto> findAll() {
         return repository.findAll()
                 .stream()
@@ -68,16 +62,10 @@ public class EmployeeService {
         );
     }
 
-    /**
-     * Удалить сотрудника по ID
-     */
     public void delete(UUID id) {
         repository.deleteById(id);
     }
 
-    /**
-     * Маппинг Entity -> DTO
-     */
     private EmployeeDto mapToDto(EmployeeEntity entity) {
         return new EmployeeDto(
                 entity.getId(),

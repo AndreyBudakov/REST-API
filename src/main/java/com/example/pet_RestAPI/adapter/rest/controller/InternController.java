@@ -30,6 +30,13 @@ public class InternController {
         return internService.getById(id);
     }
 
+    @PutMapping("/{id}")
+    public InternDto update(
+            @PathVariable UUID id,
+            @RequestBody InternDto dto) {
+        return internService.update(id, dto);
+    }
+
     @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable UUID id) {
         internService.delete(id);

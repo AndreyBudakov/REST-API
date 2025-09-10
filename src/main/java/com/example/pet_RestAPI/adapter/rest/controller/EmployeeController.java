@@ -13,20 +13,28 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class EmployeeController {
 
-    private final EmployeeService service;
+    private final EmployeeService employeeService;
 
     @PostMapping
     public EmployeeDto create(@RequestBody EmployeeDto dto) {
-        return service.create(dto);
+        return employeeService.create(dto);
     }
 
     @GetMapping
     public List<EmployeeDto> getAll() {
-        return service.findAll();
+        return employeeService.findAll();
     }
+
+    @PutMapping("/{id}")
+    public EmployeeDto update(
+            @PathVariable UUID id,
+            @RequestBody EmployeeDto dto) {
+        return employeeService.update(id, dto);
+    }
+
 
     @DeleteMapping("/delete/{id}")
     public void delete(@PathVariable UUID id) {
-        service.delete(id);
+        employeeService.delete(id);
     }
 }
