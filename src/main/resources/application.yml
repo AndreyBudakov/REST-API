@@ -7,7 +7,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update   # auto: create / update / validate / none
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
@@ -21,3 +21,12 @@ logging:
     org.hibernate.SQL: debug
     org.hibernate.type.descriptor.sql: trace
     org.hibernate.orm.jdbc.bind: trace
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
