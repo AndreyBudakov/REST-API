@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.pet_RestAPI.PetRestApiApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-09-10T19:27:28.385Z" hostname="DESKTOP-6TVR55P" time="1.086">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.pet_RestAPI.PetRestApiApplicationTests" time="1.086"/>
+  <system-out><![CDATA[00:27:15.818 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.pet_RestAPI.PetRestApiApplicationTests]: PetRestApiApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:27:16.130 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.pet_RestAPI.PetRestApiApplication for test class com.example.pet_RestAPI.PetRestApiApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-09-11T00:27:17.319+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] c.e.p.PetRestApiApplicationTests         : Starting PetRestApiApplicationTests using Java 17 with PID 19564 (started by AndreyBudakov in C:\Users\AndreyBudakov\IdeaProjects\pet-RestAPI)
+2025-09-11T00:27:17.319+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] c.e.p.PetRestApiApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T00:27:19.332+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-11T00:27:19.546+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 188 ms. Found 3 JPA repository interfaces.
+2025-09-11T00:27:20.705+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-11T00:27:20.875+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-11T00:27:20.991+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-11T00:27:21.964+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-11T00:27:22.047+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-11T00:27:22.652+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37b238da
+2025-09-11T00:27:22.662+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-11T00:27:22.848+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-11T00:27:22.867+05:00 DEBUG 19564 --- [pet-RestAPI] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(2003, org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@5c25daad) replaced previous registration(org.hibernate.type.descriptor.sql.internal.ArrayDdlTypeImpl@6fdc2db6)
+2025-09-11T00:27:22.867+05:00 DEBUG 19564 --- [pet-RestAPI] [    Test worker] o.h.t.d.sql.spi.DdlTypeRegistry          : addDescriptor(6, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@5be69f7e) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@64544ee4)
+2025-09-11T00:27:24.909+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-11T00:27:25.020+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T00:27:26.472+05:00  WARN 19564 --- [pet-RestAPI] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-11T00:27:26.615+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-11T00:27:28.328+05:00  INFO 19564 --- [pet-RestAPI] [    Test worker] c.e.p.PetRestApiApplicationTests         : Started PetRestApiApplicationTests in 11.842 seconds (process running for 14.833)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
